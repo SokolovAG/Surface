@@ -1,0 +1,52 @@
+.app {
+    padding: 80px 0;
+    margin-bottom: 40px;
+}
+
+.app__inner {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.app__btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.app__link {
+    display: block;
+    padding: 20px 75px;
+    padding-left: 100px;
+    background-color: @purpule;
+    border-radius: 45px;
+    color: @white;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 11px;
+    font-family: "ProximaNovaRegular", sans-serif;
+    box-shadow: 0 15px 20px rgba(21, 20, 56, 0.9);
+    transition: all 0.3s ease-in-out;
+
+    & span {
+        font-weight: 700;
+        display: block;
+    }
+
+    &--apple {
+        background-image: url("../img/apple_icon.png");
+        background-repeat: no-repeat;
+        background-position: 45px 50%;
+        background-size: 35px;
+    }
+
+    &--google {
+        background-image: url("../img/google-play_icon.png");
+        background-repeat: no-repeat;
+        background-position: 45px 50%;
+        background-size: 35px;
+    }
+    
+    &:hover {
+        opacity: 0.7;
+    }
+}

@@ -27,5 +27,8 @@
   ],
   "engines": {
     "node": "8.4.0"
+  },
+  "dependencies": {
+    "eslint": "^4.19.1"
   }
 }
