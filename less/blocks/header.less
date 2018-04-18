@@ -1,0 +1,76 @@
+.header {
+    background: #151438 url("../img/main_bg.jpg") no-repeat top center;
+    background-size: 100%;
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(21, 20, 56, 0.9);
+        z-index: -1;
+    }
+}
+
+.header__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header__top {
+    padding: 45px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__caption-text {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: @white;
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 0;
+    position: relative;
+}
+
+.header__title-text {
+    font-family: "ProximaNovaBold", sans-serif;
+    font-size: 71px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: @white;
+    &--left {
+        text-align: left;
+        z-index: 5;
+    }
+    &--right {
+        text-align: right;
+        padding-top: 20px;
+        z-index: 3;
+    }
+}
+
+.header__title-line {
+    position: absolute;
+    left: 35%;
+    top: 17%;
+    height: auto;
+    min-height: 250px;
+    width: 6px;
+    background: @purpule;
+    transform: skewX(-45deg);
+    z-index: 4;
+}
