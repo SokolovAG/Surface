@@ -1,0 +1,99 @@
+.athlets {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::after {
+        display: block;
+        content: "";
+        width: 678px;
+        height: 845px;
+        background-image: url("../img/footballer.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 575px;
+        position: absolute;
+        left: 15%;
+        z-index: 20;
+    }
+}
+
+.athlets__wrapper {
+    max-width: 1270px;
+}
+
+.athlets__tittle {
+    padding-top: 80px;
+    text-align: right;
+    background: @white;
+}
+
+.athlets__title-text {
+    font-size: 70px;
+    line-height: 70px;
+    font-family: "ProximaNovaBold", sans-serif;
+    font-weight: 700;
+    color: @light-gray;
+    text-transform: uppercase;
+    margin-right: 140px;
+}
+
+.athlets__content {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+
+    &--connection {
+        background-color: @white;
+    }
+
+    &--collaboration {
+        background-color: @gray;
+    }
+
+    &--growth {
+        background-color: @purpule;
+        color: @white;
+
+        & .athlets__content-title span {
+            border-bottom: 4px solid @white;
+            vertical-align: top;
+        }
+
+        & .athlets__content-lead {
+            color: @white;
+        }
+    }
+
+}
+
+.athlets__content-inner {
+    width: 750px;
+    margin-left: auto;
+    padding-right: 180px;
+}
+
+.athlets__content-title {
+    font-family: "ProximaNovaBold", sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @strong-gray;
+    margin-bottom: 20px;
+
+    & span {
+        color: @black;
+        font-size: 18px;
+        line-height: 25px;
+        border-bottom: 4px solid @purpule;
+        vertical-align: top;
+    }
+}
+
+.athlets__content-lead {
+    font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: @black;
+}
